@@ -346,7 +346,7 @@ you can use the generic selector below, but it's slower:
   color: #1abc9c;
 }
 .demo-browser {
-  background: #2c3e50 url(../images/demo/browser.png) 0 0 no-repeat;
+  background: #1ABC9C url(../images/demo/browser.png) 0 0 no-repeat;
   background-size: 659px 42px;
   color: #ffffff;
   margin: 0 41px 140px 0;
@@ -630,7 +630,7 @@ h6 {
 .btn.btn-inverse:active,
 .btn-group.open .btn.btn-inverse.dropdown-toggle,
 .btn.btn-inverse.active {
-  background-color: #2c3e50;
+  background-color: #1abc9c;
 }
 .btn > [class^="fui-"] {
   margin: 0 4px;
@@ -947,8 +947,8 @@ h6 {
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
 }
 .navbar-inverse .brand {
-  border-bottom: 2px solid #2c3e50;
-  border-right: 2px solid #2c3e50;
+  border-bottom: 2px solid #1abc9c;
+  border-right: 2px solid #1abc9c;
   color: #ffffff;
   padding: 10px 28px 11px 32px;
 }
@@ -982,8 +982,8 @@ h6 {
   font-size: 16.002px;
   /* 16px */
 
-  border-bottom: 2px solid #2c3e50;
-  border-left: 2px solid #2c3e50;
+  border-bottom: 2px solid #1abc9c;
+  border-left: 2px solid #1abc9c;
   color: #ffffff;
   padding: 16px 20px 15px;
 }
@@ -1086,7 +1086,7 @@ h6 {
   padding: 6px 8px 8px;
 }
 .navbar .nav li.dropdown .dropdown-menu .divider {
-  background-color: #2c3e50;
+  background-color: #1abc9c;
   border-bottom: none;
   margin: 2px 0 5px;
   padding: 0;
@@ -2052,7 +2052,7 @@ textarea[class*="span"] {
 .pager li > span {
   background: none;
   border: none;
-  border-left: 2px solid #2c3e50;
+  border-left: 2px solid #1abc9c;
   color: #ffffff;
   padding: 9px 15px 10px;
   text-decoration: none;
@@ -2065,11 +2065,11 @@ textarea[class*="span"] {
 .pager li > span:hover,
 .pager li > a:focus,
 .pager li > span:focus {
-  background-color: #2c3e50;
+  background-color: #1abc9c;
 }
 .pager li > a:active,
 .pager li > span:active {
-  background-color: #2c3e50;
+  background-color: #1abc9c;
 }
 .pager li > a [class*="fui-"] + span,
 .pager li > span [class*="fui-"] + span {
@@ -2532,7 +2532,7 @@ textarea[class*="span"] {
 .dropdown-inverse li > a:hover,
 .dropdown-inverse li > a:active,
 .dropdown-inverse li > a:focus {
-  background: #2c3e50;
+  background: #1abc9c;
 }
 .dropdown-inverse li > a.highlighted {
   background: #526476;
@@ -2789,7 +2789,7 @@ textarea[class*="span"] {
   background-color: #34495e;
 }
 .palette-midnight-blue {
-  background-color: #2c3e50;
+  background-color: #1abc9c;
 }
 .palette-sun-flower {
   background-color: #f1c40f;
@@ -2878,7 +2878,7 @@ textarea[class*="span"] {
   }
 }
 .todo {
-  background-color: #2c3e50;
+  background-color: #1abc9c;
   color: #798795;
   margin-bottom: 20px;
   -webkit-border-radius: 8px 8px 6px 6px;
@@ -3577,23 +3577,24 @@ body.vjs-full-window {
   border-radius: 10px;
 }
 .login {
-  background: url(../images/login/imac.png) 0 0 no-repeat;
-  background-size: 940px 778px;
-  color: #ffffff;
+  background-size: 100%;
+  color: #1abc9c;
   margin-bottom: 77px;
   padding: 38px 38px 267px;
   position: relative;
 }
 .login-screen {
   background-color: #1abc9c;
+  background-color: 100%;
   min-height: 317px;
   padding: 123px 199px 33px 306px;
 }
 .login-icon {
-  left: 200px;
+  left: 60px;
   position: absolute;
-  top: 160px;
-  width: 96px;
+  top: 140px;
+  width: 250px;
+  padding-top: 20px;
 }
 .login-icon > img {
   display: block;
@@ -3643,7 +3644,7 @@ body.vjs-full-window {
   padding-bottom: 11px;
   padding-top: 11px;
   text-indent: 3px;
-  width: 299px;
+  width: 252px;
   margin-bottom: 10px !important;
 }
 .login-form .login-field:focus + .login-field-icon {

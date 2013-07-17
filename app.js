@@ -106,10 +106,6 @@ app.get('/login', function(req, res){
   res.render('login', { user: req.user, message: req.flash('error') });
 });
 
-app.get('/login2', function(req, res){
-  res.render('login2', { user: req.user, message: req.flash('error') });
-});
-
 
 
 // POST /login

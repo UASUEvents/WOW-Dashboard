@@ -212,7 +212,7 @@ you can use the generic selector below, but it's slower:
   width: 256px;
 }
 .demo-logo small {
-  color: rgba(52, 73, 94, 0.30000000000000004);
+  color: #1ABC9C;
   display: block;
   font-size: 22px;
   font-weight: 700;
