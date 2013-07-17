@@ -1,0 +1,62 @@
+<p> Hello, <%= user.username %>.</p>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+<link rel="stylesheet" href="stylesheets/maps.css" />
+<script src = "http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+
+<div id="map"></div>
+
+<script>
+var map = L.map('map', {
+    center: [53.52676, -113.52577],
+    zoom: 16
+});
+
+L.tileLayer('http://{s}.tile.cloudmade.com/12ff892c0b1544508701426338daec18/997/256/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; [...]',
+    maxZoom: 16,
+    minZoom: 16
+}).addTo(map);
+
+var marker = L.marker([53.52775, -113.52579]).addTo(map);
+marker.bindPopup("I am a volunteer.").openPopup();
+
+function addVolunteer(){
+  //When called, this function will add a volunteer to the map according to the location specified by the radio button.
+
+    var radios = document.getElementsByName('locations');
+
+    for (var i = 0, length = radios.length; i < length; i++) {
+
+      if (radios[i].checked) {
+        // add a marker at the desired location
+        if (radios[i].value === "1") {
+        var marker = L.marker([53.52700, -113.52200]).addTo(map);
+        }
+        else if (radios[i].value === "2") {
+        var marker = L.marker([53.52509, -113.52173]).addTo(map);
+        }
+        else if (radios[i].value == "3") {
+        var marker = L.marker([53.526213, -113.52545]).addTo(map);
+        }
+
+
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+};
+    };
+
+
+
+</script>
+
+<div> Where is the new volunteer?
+  <input type="radio" id= "location" name="locations" value="1" /> <label>Business Quad</label>
+  <input type="radio" id="location" name="locations" value="2" /> <label>Bus Loop</label>
+  <input type="radio" id="location" name="locations" value="3" /> <label> Main Quad</label>
+
+
+
+<button onclick="addVolunteer()">Add volunteer</button>
+</div>
+
