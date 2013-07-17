@@ -1,67 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-<!-----Meta----->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Login Form</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="description" content="Login Form" />
-    <meta name="keywords" content="login form, psd, html, css3, jquery, tutorial" />
-    <meta name="author" content="Dzyngiri" />
-    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> WOW :: Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Stylesheets-->
-<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
-<link href="stylesheets/dzyngiri.css" rel="stylesheet" type="text/css">
-<link href="fonts/pacifico/stylesheet.css" rel="stylesheet" type="text/css" />
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
-<!--Scripts-->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!--Sliding icons-->
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".username").focus(function() {
-		$(".user-icon").css("left","-48px");
-	});
-	$(".username").blur(function() {
-		$(".user-icon").css("left","0px");
-	});
-	
-	$(".password").focus(function() {
-		$(".pass-icon").css("left","-48px");
-	});
-	$(".password").blur(function() {
-		$(".pass-icon").css("left","0px");
-	});
-});
-</script>
+    <!-- Loading Flat UI -->
+    <link href="stylesheets/flat-ui.css" rel="stylesheet">
+    <style>
+      body {background: #1abc9c;}
+    </style>
 
-</head>
-<body>
-    
-<div id="wrapper">
-	<!--Sliding icons-->
-    <div class="user-icon"></div>
-    <div class="pass-icon"></div>
-<form name="login-form" class="login-form" action="/login" method="post">
-    <div class="header">
-    <h1>Login Form</h1>
-    </div>
-    <div class="content">
-      <input name="username" type="text" class="input username" placeholder="Username" />
-      <input name="password" type="password" class="input password" placeholder="Password" />
-    </div>
-    <div class="footer">
-      <input type="submit" name="submit" value="Login" class="button" />
-      <input type="submit" name="submit" value="Register" class="register" />
-    </div>
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-</form>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="demo-headline">
+        <h1 class="demo-logo">
+          <div class="logo"></div>
+          Flat UI
+          <small>Free Web User Interface Kit</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+      <div class="login">
+        <div class="login-screen">
+          <div class="login-icon">
+            <img src="images/login/wow-logo.gif" alt="Welcome to WOW" />
+          </div>
+          <div class="login-form">
+	      <form name = "login-form" class ="login-form" action = "/login" method = "post">
+	    <div class="control-group">
+	      <input name = "username" type="text" class="login-field" placeholder="Username" id="login-name" name />
+		<label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
 
-</div>
+            <div class="control-group">
+              <input name = "password" type="password" class="login-field" placeholder="Password" id="login-pass" />
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
 
-<!--bg gradient--><div class="gradient"></div><!--END bg gradient-->
+            <input type = "submit" name = "submit" value = "Login" class="btn btn-primary btn-large btn-block" />
+            <a class="login-link" href="#">Lost your password?</a>
+	    </form>
+          </div>
+        </div>
+      </div>
 
-</body>
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="js/application.js"></script>
+  </body>
 </html>
